@@ -1,0 +1,15 @@
+
+$color-light-theme: ("light_element":hsl(0, 0%, 100%),
+                    "light_back":hsl(0, 0%, 98%),
+                    "dark_text":hsl(200, 15%, 8%),
+                    "dark_input":hsl(0, 0%, 52%));
+$color-dark-theme: ("dark_element":hsl(208, 23%, 22%),
+                    "dark_back": hsl(207, 26%, 17%),
+                    "light_text":hsl(0, 0%, 100%));
+$minBPDesk: convertToRem(600);
+$minBPTablet: 800px;
+$maxBPDesk: 2000px;
+$maxBPTablet: 1000px;
+$fontSize:10
+// $breakpointDesktop:(min-width:$minBPDesk) and (max-width:$maxBPDesk);
+// $breakpointTablet:(min-width:$minBPTablet) and (max-width:$maxBPTablet);

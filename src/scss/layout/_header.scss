@@ -1,0 +1,48 @@
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: white;
+  }
+  .header{
+    height: convertToRem(105);
+    width: 100vw;
+    position: relative;
+
+    z-index: 10;
+  }
+  
+  .nav__box{
+    width:100%;
+    background-color: map-get($map: $color-dark-theme, $key:"dark_element" );
+
+    position: fixed;
+    color: inherit;
+
+    @include mediaQ(desktop){
+      // padding: 0 6vw;
+    }
+
+
+    &--container{
+      width:100%;
+      // max-width: 1220px;
+      padding-right: convertToRem(20);
+      height: convertToRem(105);
+
+    }
+    #logo{
+        width:20px ;
+        height:20px ;
+        margin-right: 10px;
+        vertical-align: baseline;
+    }
+    #switch-theme{
+        @include flexbox(row,nowrap,center,space-between)
+    }
+    padding: 0 convertToRem(25);
+    
+  }
+  

@@ -1,0 +1,17 @@
+.button__back{
+    background-color: map-get($map: $color-dark-theme, $key: "dark_element");
+    padding: convertToRem(5) convertToRem(15);
+    text-decoration: none;
+    width: min-content;
+    color: inherit;
+    display: flex;
+    align-items: baseline;
+    margin-top: convertToRem(25);
+    margin-bottom: convertToRem(65);
+    img{
+        width: convertToRem(12);
+        height: convertToRem(10);
+        margin-right: convertToRem(10);
+        filter: invert(100);
+    }
+}

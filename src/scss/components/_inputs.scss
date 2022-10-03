@@ -1,0 +1,72 @@
+#search {
+    &__area {
+        position: relative;
+        min-width: convertToRem(350);
+        flex: 1 1 25%;
+
+        @include mediaQ(desktop){
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        left: convertToRem(23);
+        top: convertToRem(37);
+    }
+
+    &-clear {
+        color: inherit;
+    }
+}
+
+
+input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-search-cancel-button {
+    margin: 2rem 2rem;
+    filter: brightness(6.5);
+}
+.inputs{
+    max-width: convertToRem(1185);
+}
+.arrow {
+    &:focus {
+        color: inherit;
+    }
+
+    &:active {
+        color: inherit;
+    }
+}
+
+input:-internal-autofill-selected {
+    background-color: transparent !important;
+  
+}
+.white-space{
+    flex: 0;
+    @include mediaQ(desktop,600){
+       flex: 1 0 25%;
+   }
+}
+#input {
+
+    margin: convertToRem(20) 0 convertToRem(40) 0;
+    height: convertToRem(50);
+    background: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 52%);
+    width: 100%;
+    max-width: convertToRem(345);
+    border: none;
+    text-indent: convertToRem(74);
+    appearance: none;
+
+    &::placeholder {
+        color: inherit; //zaměřit se na placeholder při přepínání pozadí
+    }
+
+    ¨ &:active,
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
+

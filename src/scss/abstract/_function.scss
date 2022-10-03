@@ -1,0 +1,3 @@
+@function convertToRem($pixel,$fontSize:10){
+    @return #{$pixel / $fontSize}rem;
+}

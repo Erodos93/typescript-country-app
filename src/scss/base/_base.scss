@@ -1,0 +1,30 @@
+$fontSizeDesk:62.5%;
+$fontSizeMob:50%;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    // background-color: map.get($color-dark-theme,"dark-back");
+}
+html{
+
+    font-size:$fontSizeMob; 
+    @include mediaQ(desktop){
+        font-size:$fontSizeDesk; 
+    }
+}
+body{
+    background: map-get($map: $color-dark-theme, $key: 'dark_back');
+}
+h3{
+    display: inline;
+}
+#root{
+    color: white;
+}
+
+// #detail{
+//     font-size:100%;
+// }

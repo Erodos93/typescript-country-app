@@ -1,0 +1,20 @@
+
+@mixin flexbox($direction,$wrap,$align,$justify){
+    display: flex;
+    flex-flow: $direction $wrap;
+    align-items: $align;
+    justify-content: $justify;
+}
+@mixin mediaQ($breakpoint,$minWidth:$minBPDesk,$maxWidth:$maxBPDesk){
+    @if $breakpoint==desktop {
+        @media screen and (min-width:$minWidth) and (max-width:$maxWidth) {
+            @content
+        }
+    }
+    @else if $breakpoint==tablet {
+        @media screen and (min-width:$minWidth) and (max-width:$maxWidth) {
+            @content
+        }
+    }
+
+}

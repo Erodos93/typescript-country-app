@@ -1,0 +1,82 @@
+.nav__box--container {
+    @include flexbox(row, nowrap, center, space-between);
+}
+
+.flex__container {
+    display: flex;
+    flex-direction: column;
+
+    &--card {
+        
+        @include flexbox(row, wrap, center, start);
+        grid-column: 2 / 3;
+        column-gap: convertToRem(63);
+        @include mediaQ(desktop) {
+            @include flexbox(row, wrap, center, stretch);
+            column-gap: convertToRem(50);
+        }
+
+    }
+    @include mediaQ(desktop) {
+        flex-direction: row;
+    }
+}
+
+.flexbox__border--list {
+
+    
+    @include mediaQ(tablet,$minBPTablet) {
+        display: flex;
+        flex-wrap: nowrap;
+        flex: 1 1 50%;
+    }
+}
+
+
+.inputs {
+    flex: 1 1 100%;
+    align-items: baseline;
+    
+    flex-wrap: wrap;
+    @include mediaQ(desktop) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.country__card {
+    &--describe {
+        display: flex;
+    }
+}
+
+.flag__box {
+    flex: 1 1 50%;
+}
+
+.info__desc {
+    flex: 1 1 50%;
+}
+.info__box{
+    @include mediaQ(desktop) {
+        flex-direction: row;
+        
+    }
+} 
+.info__list {
+    flex-wrap: wrap;
+    &--1 {
+        flex: convertToRem(175);
+    }
+    
+    &--2 {
+        flex: 45%;
+    }
+}
+.info__item {
+    @include mediaQ(desktop) {
+        flex: 1 1 convertToRem(100);
+    }
+}
+
+

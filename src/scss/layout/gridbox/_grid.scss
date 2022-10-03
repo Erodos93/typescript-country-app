@@ -1,0 +1,30 @@
+.grid__container{
+    display: grid;
+    grid-template-columns:minmax(8vw, 1fr) minmax(convertToRem(300), convertToRem(1205)) minmax(8vw, 1fr);
+
+    &--loading{
+        display: grid;
+        grid-column:2/3 ;
+    }
+}
+
+.inputs{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.container--cards{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.nav__box{
+    display: grid;
+    grid-template-rows: convertToRem(105);
+    grid-template-columns: 0 minmax(convertToRem(300),convertToRem(1440)) 0;
+    &--container{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    @include mediaQ(desktop){
+        grid-template-columns:minmax(8vw, 1fr) minmax(convertToRem(300), convertToRem(1205)) minmax(8vw, 1fr);
+    }
+}

@@ -1,0 +1,114 @@
+.detail {
+    &__section {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 200;
+        padding: 0 15px;
+        opacity: 0;
+        top: 1000px;
+        overflow-y: auto;
+        background-color: map-get($map: $color-dark-theme, $key: "dark_back");
+        @include mediaQ(desktop){
+            padding: 0 8vw;
+        }
+    }
+}
+
+.flag {
+    &__box {
+        width: 100%;
+        min-width: convertToRem(340);
+    }
+
+    &__img {
+        width: 100%;
+        min-width: convertToRem(330);
+        max-width: convertToRem(600);
+    }
+
+}
+
+.info {
+    &__box {
+        margin-bottom: convertToRem(50);
+    }
+
+    &__item {
+        display: inline;
+        float: left;
+        text-align: center;
+        background-color: map-get($map: $color-dark-theme, $key: "dark_element");
+        padding: convertToRem(5) convertToRem(25);
+        margin: convertToRem(15) convertToRem(10) 0 0;
+    }
+
+    &__list {
+
+        list-style-type: none;
+
+        &--header {
+            @include mediaQ(desktop) {
+                display: block;
+                margin-top: 15px;
+                min-width: convertToRem(160);
+
+            }
+        }
+
+        & ul>li>h3 {
+            display: inline;
+        }
+
+        &--2 {
+            flex: 45%;
+        }
+
+        & &span {
+            padding-left: convertToRem(5);
+        }
+    }
+
+    &__desc {
+        margin-top: convertToRem(43);
+        margin-bottom: convertToRem(100);
+
+        @include mediaQ(desktop) {
+            margin: 0 0 convertToRem(100) convertToRem(60);
+        }
+
+        & header {
+            padding-bottom: convertToRem(34);
+        }
+
+        li {
+            line-height: convertToRem(25);
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        hr {
+            border: none;
+            margin: convertToRem(20) 0;
+        }
+    }
+}
+
+.flexbox__border--list {
+    list-style-type: none;
+}
+
+.animate {
+    &__up {
+        display: block;
+        animation: open 0.5s forwards;
+    }
+
+    &__down {
+        display: none;
+        animation: open 0.5s reverse backwards;
+    }
+
+}
