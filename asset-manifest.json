@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/new-country-card/static/css/main.8d8f6407.css",
-    "main.js": "/new-country-card/static/js/main.3a386023.js",
-    "index.html": "/new-country-card/index.html",
-    "static/media/moon.svg": "/new-country-card/static/media/moon.e7ec4c7528d51c9c6c5e5ddf184a1ec1.svg",
-    "static/media/arrow-thin-left.svg": "/new-country-card/static/media/arrow-thin-left.e3824bdc797126a811a38f112eaff895.svg",
-    "main.8d8f6407.css.map": "/new-country-card/static/css/main.8d8f6407.css.map",
-    "main.3a386023.js.map": "/new-country-card/static/js/main.3a386023.js.map"
+    "main.css": "/new-country-card/build/static/css/main.8d8f6407.css",
+    "main.js": "/new-country-card/build/static/js/main.78d37d66.js",
+    "index.html": "/new-country-card/build/index.html",
+    "static/media/moon.svg": "/new-country-card/build/static/media/moon.e7ec4c7528d51c9c6c5e5ddf184a1ec1.svg",
+    "static/media/arrow-thin-left.svg": "/new-country-card/build/static/media/arrow-thin-left.e3824bdc797126a811a38f112eaff895.svg",
+    "main.8d8f6407.css.map": "/new-country-card/build/static/css/main.8d8f6407.css.map",
+    "main.78d37d66.js.map": "/new-country-card/build/static/js/main.78d37d66.js.map"
   },
   "entrypoints": [
     "static/css/main.8d8f6407.css",
-    "static/js/main.3a386023.js"
+    "static/js/main.78d37d66.js"
   ]
 }
